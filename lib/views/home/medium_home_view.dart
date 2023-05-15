@@ -15,7 +15,7 @@ class MediumHomeView extends StatelessWidget {
               CustomBackground(color: Theme.of(context).colorScheme.primary),
           size: Size(
             MediaQuery.of(context).size.width,
-            MediaQuery.of(context).size.height / 2,
+            600,
           ),
         ),
         const CustomScrollView(
@@ -23,6 +23,9 @@ class MediumHomeView extends StatelessWidget {
             SliverPadding(
               padding: EdgeInsets.all(16),
               sliver: AppBarWidget(),
+            ),
+            SliverToBoxAdapter(
+              child: PageHeaderWidget(),
             )
           ],
         ),

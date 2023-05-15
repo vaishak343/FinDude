@@ -4,3 +4,4 @@ export 'medium_home_view.dart';
 export 'large_home_view.dart';
 export 'custom_background.dart';
 export 'common_widgets.dart';
+export 'cubit/home_cubit.dart';

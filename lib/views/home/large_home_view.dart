@@ -19,7 +19,7 @@ class _LargeHomeViewState extends State<LargeHomeView> {
               CustomBackground(color: Theme.of(context).colorScheme.primary),
           size: Size(
             MediaQuery.of(context).size.width,
-            MediaQuery.of(context).size.height / 2,
+            600,
           ),
         ),
         const CustomScrollView(
@@ -28,7 +28,9 @@ class _LargeHomeViewState extends State<LargeHomeView> {
               padding: EdgeInsets.all(16),
               sliver: AppBarWidget(),
             ),
-             
+            SliverToBoxAdapter(
+              child: PageHeaderWidget(),
+            )
           ],
         ),
       ],
